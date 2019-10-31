@@ -1,0 +1,9 @@
+services:
+    kasimi.thousandsseparator.listener:
+        class: 'kasimi\thousandsseparator\event\listener'
+        arguments:
+            - '@language'
+            - '@config'
+            - '@template'
+        tags:
+            - { name: 'event.listener' }
